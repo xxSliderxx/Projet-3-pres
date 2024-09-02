@@ -50,7 +50,7 @@ def ana():
         # Set up a dictionary of font title
         font_title = {'family': 'sans-serif',
                                 'color':  '#114b98',
-                                'fontweight': 'bold'}
+                                'weight': 'bold'}
         
         
         fig, ax = plt.subplots(2,1,figsize =(12,12))
@@ -355,7 +355,7 @@ def ana():
 
     ### Boxplot Rainy day consumption ###
     
-     fig,axs =plt.subplots(2,1,figsize=(12,12))
+    fig,axs =plt.subplots(2,1,figsize=(12,12))
     fig.suptitle("AVG consumption per day by rainy/non rainy day", fontdict=font_title, fontsize = 22)
     ax1 = sns.boxplot(data = df_concat[df_concat['Code région']==24],y= 'Rain',x='Total énergie soutirée (MWh)',ax =axs[0],hue = 'Rain')
     ax2 = sns.boxplot(data = df_concat[df_concat['Code région']==32],y= 'Rain',x='Total énergie soutirée (MWh)',ax =axs[1],hue = 'Rain')
