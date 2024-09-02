@@ -50,7 +50,7 @@ def ana():
         # Set up a dictionary of font title
         font_title = {'family': 'sans-serif',
                                 'color':  '#114b98',
-                                'weight': 'bold'}
+                                'fontweight': 'bold'}
         
         
         fig, ax = plt.subplots(2,1,figsize =(12,12))
